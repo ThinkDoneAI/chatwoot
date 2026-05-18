@@ -613,6 +613,7 @@ en:
       hello_there: Hello there,
       click_here: "Click <a href=\"%{url}\">here</a>"
       powered_by: Powered by
+      sent_by_prefix: This email was sent by
       you: You
       attachment_click_to_view: "Attachment [<a href=\"%{url}\" target=\"_blank\">Click here to view</a>]"
       click_here_to_get_cracking: "Click <a href=\"%{url}\">here</a> to get cracking."
@@ -756,16 +757,52 @@ en:
         support_message: If you have any questions or need help, feel free to reach out to our support team. We're here to assist you.
     devise:
       confirmation_instructions:
-        invited_html: "%{inviter_name}, with %{account_name}, has invited you to try out %{brand_name}."
-        login_message_html: "You can login to your %{brand_name} account through the link below:"
-        welcome_html: Welcome to %{brand_name}! We have a suite of powerful tools ready for you to explore. Before that we quickly need to verify your email address to know it's really you.
-        activate_html: Please take a moment and click the link below and activate your account.
-        confirm_account: Confirm my account
-        login_account: Login to my account
-        invited_sso_html: "%{inviter_name}, with %{account_name}, has invited you to access %{brand_name} via Single Sign-On (SSO)."
-        sso_no_password_html: Your organization uses SSO for secure authentication. You will not need a password to access your account.
-        sso_login_html: You can now access your account by logging in through your organization's SSO portal.
-        sso_access_html: You can access your account by logging in through your organization's SSO portal.
+        secure_link: this secure link
+        button_fallback_html: "If the button does not work, open %{link}."
+        labels:
+          invited_by: Invited by
+          workspace: Workspace
+          sign_in_method: Sign-in method
+          sign_in_method_value: Single Sign-On (SSO)
+          new_email: New email
+        welcome:
+          eyebrow: Welcome
+          heading: Confirm your email to get started
+          intro_html: "Welcome to %{brand_name}. We just need to verify your email address before you can start using your account."
+          supporting_text: This only takes a moment.
+          action_text: Confirm my account
+        email_update:
+          eyebrow: Email update
+          heading: Confirm your new email address
+          intro_html: "We received a request to update the email address on your %{brand_name} account."
+          supporting_text: Confirm the new address below to finish the change.
+          action_text: Confirm email address
+        account_ready:
+          eyebrow: Account ready
+          heading: Your account is ready
+          intro_html: "Your %{brand_name} account is already active."
+          supporting_text: Use the button below to sign in and continue where you left off.
+          action_text: Open my account
+        invitation:
+          eyebrow: Workspace invitation
+          heading_with_account: "You're invited to join %{account_name}"
+          heading_default: "You're invited to try %{brand_name}"
+          intro_with_account_html: "%{inviter_name} invited you to join the %{account_name} workspace on %{brand_name}."
+          intro_default_html: "%{inviter_name} invited you to try %{brand_name}."
+          supporting_text: Create your account to start collaborating with your team.
+          action_text: Accept invitation
+        sso_access_ready:
+          heading: Your access is ready
+          intro_html: "Your %{brand_name} access is already set up."
+          supporting_html: "Use your organization's Single Sign-On (SSO) portal to access %{brand_name}."
+          info_title: "Sign in with your organization's SSO"
+          info_text_html: "You won't need a separate password for %{brand_name}. Start from your company identity provider portal."
+        sso_invitation:
+          intro_with_account_html: "%{inviter_name} invited you to access the %{account_name} workspace on %{brand_name}."
+          intro_default_html: "%{inviter_name} invited you to access %{brand_name}."
+          supporting_html: "Your organization uses Single Sign-On (SSO), so you won't need to create a separate password."
+          info_title: "Use your organization's SSO portal"
+          info_text_html: "Continue from your company identity provider portal to access %{brand_name}."
       reset_password_instructions:
         greeting_html: Hello %{name}!
         body_html: Someone has requested a link to change your password. You can do this through the link below.
