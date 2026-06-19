@@ -103,3 +103,11 @@ CLAUDE.local.md
 .pnpm-store/*
 local/
 Procfile.worktree
+
+# OMC (oh-my-claudecode) tooling state — ignore ephemeral, keep durable artifacts
+/.omc/*
+!/.omc/plans/
+!/.omc/specs/
+!/.omc/research/
+!/.omc/notepad.md
+!/.omc/project-memory.json
