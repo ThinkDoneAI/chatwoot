@@ -1,3 +1,14 @@
+> [!IMPORTANT]
+> **Everything in this repository is a proof of concept.** The implementations here are exploratory:
+> not definitive, not complete, and not a statement of intended scope.
+>
+> **Do not use this repository to establish scope coverage or design definitions.** What is present
+> may be partial, superseded, or built to probe a single idea in isolation. What is absent may simply
+> not have been explored yet. Neither presence nor absence is evidence of a decision.
+>
+> **Confirm the current specification and requirements before relying on anything here.** Where this
+> repository and the current specs disagree, the specs are right.
+
 <img src="./.github/screenshots/header.png#gh-light-mode-only" width="100%" alt="Header light mode"/>
 <img src="./.github/screenshots/header-dark.png#gh-dark-mode-only" width="100%" alt="Header dark mode"/>
 
